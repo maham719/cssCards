@@ -5,6 +5,8 @@
 nav{
     width: 100%;
     min-height:200px ;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.402);
+    ;
 }
 .nav-top{
     width: 100%;
@@ -14,8 +16,8 @@ nav{
      justify-content: space-around;
 }
 .nav-top img{
-    width: 200px;
-    height: 200px;
+    max-width: 150px;
+    max-height: 200px;
 }
 .nav-top ul{
     display: flex;
@@ -34,12 +36,15 @@ nav{
 }
 .nav-top ul li:hover{
     color: #FF1919;
+    cursor: pointer;
+
 }
 .logo{
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
+padding-top: 0.5rem;
 }
 .logo img{
     filter: saturate(100);
@@ -60,6 +65,7 @@ nav{
 }
 .menu ul li:hover{
     color: #FF1919;
+    cursor: pointer;
 }
 .box{
     display: flex;
@@ -67,14 +73,29 @@ nav{
     flex-direction: column;
     gap: 1rem;
     background-color: #DDD;
+    min-height: 400px;
+    max-height: 500px;
+    transition: all 0.5s ease-in-out;
+    min-width: 35%;
+    overflow: hidden;
 }
 .box:hover{
    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.402);
 }
 .img img{
-    width: 300px;
-    height: 400px;
+    width: 19rem;
+    height: 20rem;
+    aspect-ratio: 5/9;
     animation: rotate ease-in ;
+  transition: all 0.5s ease-in-out;
+    
+}
+.img{
+    min-height: 300px;
+    object-fit: contain;
+    overflow: hidden;
+    padding: 0.5rem 0;
+   
 }
 button{
     padding: 10px 30px;
@@ -100,25 +121,29 @@ button:hover{
     color:rgb(237, 111, 132);
     background-color: transparent;
     border : 1px solid rgb(237, 111, 132);
+    cursor: pointer;
 }
-.img1:hover{
+.box:hover .img1{
     background-image: url(vibrant-orange-liquid-splash-on-a-reflective-surface-free-photo.jpg);
     background-position: center;
     background-size: cover;
 }
-.img2:hover{
+.box:hover .img2{
     background-image: url(pexels-aulsh99-2860705.jpg);
     background-position: center;
     background-size: cover;
 }
-.img3:hover{
+.box:hover .img3{
     background-image: url(images\ \(1\).jfif);
     background-position: center;
     background-size: cover;
 }
-.img4:hover{
+.box:hover .img4{
     background-image: url(vibrant-orange-liquid-splash-on-a-reflective-surface-free-photo.jpg);
     background-position: center;
     background-size: cover;
 }
 
+.img img:hover{
+transform: scale(1.1);
+}
