@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    min-height:200px ;
+}
+.nav-top{
+    width: 100%;
+    display: flex;
+     min-height: 50px;
+     align-items: center;
+     justify-content: space-around;
+}
+.nav-top img{
+    width: 200px;
+    height: 200px;
+}
+.nav-top ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10%;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.nav-top ul li{
+ list-style: none;
+ color:rgb(108, 103, 103);
+ font-weight: lighter;
+ font-size: 20px;
+}
+.nav-top ul li:hover{
+    color: #FF1919;
+}
+.logo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.logo img{
+    filter: saturate(100);
+
+}
+.menu{
+    width: 100%;
+}
+.menu ul{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 20px;
+  color:rgb(108, 103, 103);
+}
+.menu ul li:hover{
+    color: #FF1919;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #DDD;
+}
+.box:hover{
+   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.402);
+}
+.img img{
+    width: 300px;
+    height: 400px;
+    animation: rotate ease-in ;
+}
+button{
+    padding: 10px 30px;
+    background-color: rgb(237, 111, 132);
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 60%;
+    gap: 2rem;
+    
+}
+.box h1{
+    color: rgb(97, 97, 97);
+}
+button:hover{
+    color:rgb(237, 111, 132);
+    background-color: transparent;
+    border : 1px solid rgb(237, 111, 132);
+}
+.img1:hover{
+    background-image: url(vibrant-orange-liquid-splash-on-a-reflective-surface-free-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img2:hover{
+    background-image: url(pexels-aulsh99-2860705.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img3:hover{
+    background-image: url(images\ \(1\).jfif);
+    background-position: center;
+    background-size: cover;
+}
+.img4:hover{
+    background-image: url(vibrant-orange-liquid-splash-on-a-reflective-surface-free-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
